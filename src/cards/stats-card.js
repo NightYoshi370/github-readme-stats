@@ -17,10 +17,10 @@ const createTextNode = ({
   const kValue = kFormatter(value);
   const staggerDelay = (index + 3) * 150;
 
-  const labelOffset = showIcons ? `x="25"` : "";
+  const labelOffset = showIcons ? `x="55"` : "";
   const iconSvg = showIcons
     ? `
-    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+    <svg data-testid="icon" class="icon" viewBox="0 0 16 16" version="1.1" x="35" width="16" height="16">
       ${icon}
     </svg>
   `
@@ -28,10 +28,11 @@ const createTextNode = ({
   return `
     <g class="stagger" style="animation-delay: ${staggerDelay}ms" transform="translate(25, 0)">
       ${iconSvg}
-      <text class="stat bold" ${labelOffset} y="12.5">${label}:</text>
+      <text class="stat" ${labelOffset} y="12.5">${label}</text>
       <text 
-        class="stat" 
-        x="${(showIcons ? 140 : 120) + shiftValuePos}" 
+        class="stat bold" 
+        text-anchor="end" 
+        x="30" 
         y="12.5" 
         data-testid="${id}"
       >${kValue}</text>

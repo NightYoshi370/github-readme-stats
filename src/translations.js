@@ -22,7 +22,7 @@ const statCardLocales = ({ name, apostrophe }) => {
     "statcard.totalstars": {
       cn: "总 Star",
       de: "Sterne Insgesamt",
-      en: "Total Stars",
+      en: "Stars Gained",
       es: "Estrellas totales",
       fr: "Total d'étoiles",
       hu: "Csillagok",
@@ -39,7 +39,7 @@ const statCardLocales = ({ name, apostrophe }) => {
     "statcard.commits": {
       cn: "总提交",
       de: "Anzahl Commits",
-      en: "Total Commits",
+      en: "Commits Pushed",
       es: "Compromisos totales",
       fr: "Total des engagements",
       hu: "Összes commit",
@@ -56,7 +56,7 @@ const statCardLocales = ({ name, apostrophe }) => {
     "statcard.prs": {
       cn: "总 PR",
       de: "PRs Insgesamt",
-      en: "Total PRs",
+      en: "PRs sent",
       es: "RP totales",
       fr: "Total des PR",
       hu: "Összes PR",
@@ -73,7 +73,7 @@ const statCardLocales = ({ name, apostrophe }) => {
     "statcard.issues": {
       cn: "总 Issue",
       de: "Anzahl Issues",
-      en: "Total Issues",
+      en: "Issues Opened",
       es: "Problemas totales",
       fr: "Nombre total de problèmes",
       hu: "Összes hibajegy",
