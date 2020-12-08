@@ -28,7 +28,7 @@ const createTextNode = ({
   return `
     <g class="stagger" style="animation-delay: ${staggerDelay}ms" transform="translate(25, 0)">
       ${iconSvg}
-      <text class="stat" ${labelOffset} y="12.5">${label}</text>
+      <text class="stat" data-testlabel="${id}" ${labelOffset} y="12.5">${label}</text>
       <text 
         class="stat bold" 
         text-anchor="end" 
